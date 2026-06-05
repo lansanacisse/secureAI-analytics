@@ -1,11 +1,14 @@
 # pages/documentation.py
 import streamlit as st
 
-st.set_page_config(page_title="Documentation", page_icon="📄")
+PROJECT_NAME = "SecureIA Analytics"
+SUPPORT_EMAIL = "support@secureia-analytics.com"
 
-st.title("📄 Documentation")
-st.markdown("""
-### Bienvenue dans la documentation de l'application Security M2 SISE !
+st.set_page_config(page_title=f"Documentation {PROJECT_NAME}", page_icon="📄")
+
+st.title(f"📄 Documentation {PROJECT_NAME}")
+st.markdown(f"""
+### Bienvenue dans la documentation de {PROJECT_NAME} !
 
 Cette documentation vous guide à travers les fonctionnalités de l'application.
 
@@ -22,5 +25,5 @@ Cette documentation vous guide à travers les fonctionnalités de l'application.
 - Consultez les statistiques et visualisations pour mieux comprendre les tendances.
 
 #### Support :
-Pour toute question ou assistance, contactez l'équipe de support à [support@securitym2sise.com](mailto:support@securitym2sise.com).
+Pour toute question ou assistance, contactez l'équipe de support à [{SUPPORT_EMAIL}](mailto:{SUPPORT_EMAIL}).
 """)

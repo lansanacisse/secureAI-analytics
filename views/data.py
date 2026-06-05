@@ -5,8 +5,10 @@ import plotly.express as px
 from datetime import datetime
 from db import LogDatabase
 
+PROJECT_NAME = "SecureIA Analytics"
+
 # Configuration de la page
-st.set_page_config(page_title="Analyse des logs de firewall", layout="wide")
+st.set_page_config(page_title=f"{PROJECT_NAME} - Analyse des logs", layout="wide")
 
 def load_data():
     """Fonction pour charger et préparer les données."""

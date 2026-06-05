@@ -6,8 +6,12 @@ from views.data import explore_data
 from views.protocol import analyze_flows 
 from views.upload import upload_page 
 from views.machine_learning import machine_learning_page
-
 from db import LogDatabase
+
+PROJECT_NAME = "SecureIA Analytics"
+PROJECT_TAGLINE = "Plateforme professionnelle d'analyse des logs et de détection d'intrusions par IA"
+SUPPORT_EMAIL = "support@secureia-analytics.com"
+GITHUB_URL = "https://github.com/lansanacisse/security_m2sise"
 
 
 def user_page():
@@ -16,11 +20,12 @@ def user_page():
     # Sidebar navigation with streamlit-option-menu
     with st.sidebar:
         st.image("img/logo.png", use_container_width=True)
-        st.markdown("<h1 style='text-align: center;'>SecureIA Dashboard</h1>", unsafe_allow_html=True)
+        st.markdown(f"<h1 style='text-align: center;'>{PROJECT_NAME}</h1>", unsafe_allow_html=True)
+        st.markdown(f"<p style='text-align: center; color: #555;'>{PROJECT_TAGLINE}</p>", unsafe_allow_html=True)
         # Navigation menu with icons
         selected_tab = option_menu(
             menu_title=None,  # Added menu_title parameter
-            options=["Home", "Upload", "Analysis", "Datasets", "Protocol", "Machine Learning"],
+            options=["Accueil", "Upload", "Analyse", "Datasets", "Protocol", "Machine Learning"],
             icons=["house", "arrow-up", "bar-chart", "search", "robot", "cpu"],
             menu_icon="cast",
             default_index=0,
@@ -33,19 +38,19 @@ def user_page():
         )
 
     # Content based on selection
-    if selected_tab == "Home":
-        st.write("Welcome to the Security M2 SISE dashboard!")
-        st.markdown("""
-            **Overview:**
-            - View your security logs
-            - Analyze data trends
-            - Explore datasets
-            - Apply machine learning models
+    if selected_tab == "Accueil":
+        st.write(f"Bienvenue sur {PROJECT_NAME} !")
+        st.markdown(f"""
+            **{PROJECT_TAGLINE}**
+            - Analysez vos logs de sécurité
+            - Identifiez les anomalies réseau
+            - Explorez les données opérationnelles
+            - Appliquez des modèles de Machine Learning
         """)
 
     elif selected_tab == "Upload":
         upload_page()
-    elif selected_tab == "Analysis":
+    elif selected_tab == "Analyse":
         st.title("Analyse des logs de sécurité")
         analyze_logs()
         
@@ -64,15 +69,16 @@ def user_page():
     col1, col2 = st.columns(2)
 
     with col1:
-        st.markdown("### 📄 About")
-        st.write("This dashboard is maintained by the Security M2 SISE team.")
-        st.write("For more information, please visit the [GitHub repository](https://github.com/lansanacisse/security_m2sise/tree/develop).")
+        st.markdown("### 📄 À propos")
+        st.write(f"Tableau de bord maintenu par l'équipe {PROJECT_NAME}.")
+        st.write(f"Pour plus d'informations, visitez le [dépôt GitHub]({GITHUB_URL}).")
+        st.write(f"Assistance : {SUPPORT_EMAIL}")
 
     with col2:
-        st.markdown("###  Collaborators")
+        st.markdown("### Collaborateurs")
         st.write("""
         - [Lansana Cisse](https://github.com/lansanacisse)
-        - [Quentin lim](https://github.com/QL2111)
+        - [Quentin Lim](https://github.com/QL2111)
         - [Juan Alfonso](https://github.com/jdalfons)
         - [Mariem Amirouch](https://www.linkedin.com/in/mariem-amirouch-b79a64256/)
         - [Riyad ISMAILI](https://github.com/riyadismaili)
