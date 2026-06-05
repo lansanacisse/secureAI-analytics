@@ -4,12 +4,6 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)  
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)  
 
-Plateforme professionnelle d'analyse des logs et de détection d'intrusions réseau par Intelligence Artificielle.  
-
- 
-
-## Description
-
 SecureIA Analytics est une solution de sécurité opérationnelle conçue pour analyser des flux de logs réseau, détecter des comportements anormaux et produire des rapports exploitables.
 
 
