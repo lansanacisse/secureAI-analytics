@@ -6,19 +6,12 @@
 
 Plateforme professionnelle d'analyse des logs et de détection d'intrusions réseau par Intelligence Artificielle.  
 
----
+ 
 
 ## Description
 
 SecureIA Analytics est une solution de sécurité opérationnelle conçue pour analyser des flux de logs réseau, détecter des comportements anormaux et produire des rapports exploitables.
 
-### Objectifs
-- Analyser les journaux d'événements réseau et de pare-feu.
-- Détecter les anomalies à l'aide de modèles de Machine Learning.
-- Surveiller les attaques potentielles et les schémas d'intrusion.
-- Gérer l'import de fichiers **Parquet** et **CSV**.
-
----
 
 ## Fonctionnalités clés
 
@@ -29,19 +22,19 @@ SecureIA Analytics est une solution de sécurité opérationnelle conçue pour a
 - ✅ **Import dynamique** de données Parquet/CSV.
 - ✅ **Prêt pour le cloud** : Docker et déploiement Hugging Face Spaces.
 
----
+ 
 
 ## Technologies utilisées
 
 - Python
 - Streamlit
-- Pandas / Polars
+- Pandas
 - Scikit-learn
-- Plotly / Matplotlib / Seaborn
+- Plotly / eaborn
 - SQLAlchemy
 - Docker
 
----
+ 
 
 ## Installation locale
 
@@ -77,7 +70,7 @@ Accédez à :
 
 http://localhost:8501
 
----
+ 
 
 ## Déploiement Docker
 
@@ -85,14 +78,6 @@ http://localhost:8501
 docker build -t secureia-analytics .
 docker run -p 7860:7860 secureia-analytics
 ```
-
----
-
-## Déploiement cloud
-
-Cette application est compatible avec Hugging Face Spaces et d'autres environnements Docker.
-
----
 
 ## Contacts
 
