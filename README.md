@@ -5,7 +5,6 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)  
 
 Plateforme professionnelle d'analyse des logs et de détection d'intrusions réseau par Intelligence Artificielle.  
-**Déploiement recommandé :** Docker ou Hugging Face Spaces.
 
 ---
 
@@ -53,8 +52,8 @@ SecureIA Analytics est une solution de sécurité opérationnelle conçue pour a
 
 ### 1. Cloner le dépôt
 ```bash
-git clone https://github.com/lansanacisse/security_m2sise.git
-cd security_m2sise
+git clone https://github.com/lansanacisse/secureAI-analytics.git
+cd secureAI-analytics
 ```
 
 ### 2. Créer un environnement virtuel
